@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polygon Canvas</title>
+   </head>
+<body>
+    
+    <canvas style="border: thick solid red;" id="canvas1" width="600" height="300"></canvas>
+    
+    <script>
+        var ct=document.getElementById("canvas1");
+        var r=ct.getContext("2d");
+        r.translate(ct.width/2,ct.height/2);
+        var rd=80; // radius of polygon
+        var n=5; // no of sides of polygon
+        var d=360/n; // calculate degree of polygon
+        r.lineWidth=8; // width of line
+        r.strokeStyle="green";
+        r.moveTo(rd,0);
+        for(i=1;i<=n;i++)
+        {
+            r.lineTo(rd*Math.cos(i*rad(d)),rd*Math.sin(rad(i*d))); // cos is used to create x coord of line and sin is used to create y coord of line where radius is multiplied to create a side off polygon
+        }
+        r.closePath();
+        r.stroke();
+        function rad(d)
+        {
+            return d/180*Math.PI;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Rowspan and columnspan</title>
+    <style>
+       td { text-align: center;}
+    </style>
+</head>
+<body>
+
+    
+<!-- ////////////////////////       EXAMPLES OF ROW SPAN             ///////////////////////   -->
+
+    <table border="2" cellpadding="5" bordercolor="lightgrey" bgcolor="lightgray" cellspacing="8" width="500" height="200">
+        <caption><h2>STUDENT LIST</h2></caption>
+        <tr bgcolor="Gray">
+            <th>CLASS</th>
+            <th>ROLL NO.</th> 
+            <th>NAME</th>          
+            <th>AGE</th>
+            </b>
+        </tr>
+        <!-- VI class -->
+        <tr>
+            <td rowspan="4" bgcolor="Gray">VI</td>
+            <td>1</td>
+            <td>Puja</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Rahul</td>
+            <td>11</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Ravi</td>
+            <td>11</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Sonam</td>
+            
+            <td>11</td>
+        </tr>
+        <!-- VII class-->
+        <tr>
+            <td rowspan="4" bgcolor="Gray">VII</td>
+            <td>1</td>
+            <td>Pujari</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Raj</td>
+            <td>11</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Ram</td>
+            <td>11</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Sohan</td>
+            <td>13</td>
+        </tr>
+    </table>
+    
+        <!--/ ////////////////////        EXAMPLES OF COLUMN SPAN             /////////////////////////// -->
+
+
+    <table border="2" cellpadding="5" bordercolor="lightgray" bgcolor="lightgray" cellspacing="8" width="500" height="200">
+        <caption><h2>STUDENT LIST</h2></caption>
+        <tr>
+            <th colspan="4" bgcolor="gray"><b>Name - Puja</b></th>
+        </tr>
+
+        <tr >
+            <td>Maths</td>
+            <td>8/10</td> 
+            <td>Science</td>          
+            <td>7/10</td>
+            
+        </tr>
+        <tr>
+            <th colspan="4" bgcolor="gray"><b>Name - Rahul</b></td>
+        </tr>
+
+        <tr >
+            <td>Maths</td>
+            <td>5/10</td> 
+            <td>Science</td>          
+            <td>9/10</td>
+            
+        </tr>
+        <tr>
+            <th colspan="4" bgcolor="gray"><b>Name - Ravi</b></th>
+        </tr>
+
+        <tr >
+            <td>Maths</td>
+            <td>9/10</td> 
+            <td>Science</td>          
+            <td>6/10</td>
+          
+        </tr>
+        <tr>
+            <th colspan="4" bgcolor="gray"><b>Name - Sonam</b></th>
+        </tr>
+
+        <tr>
+            <td>Maths</td>
+            <td>8/10</td> 
+            <td>Science</td>          
+            <td>9/10</td>
+            
+        </tr>
+        
+    </table>
+    <br><br>
+
+
+            <!--/ ////////////////////        EXAMPLES OF Combination of COLUMN SPAN             /////////////////////////// -->
+        <table border="2" cellpadding="10" bordercolor="gray" bgcolor="lightgray" cellspacing="8" width="1200" height="400">
+            <caption><h2>STUDENT LIST</h2></caption>    
+            <tr>
+                <th colspan="7" bgcolor="gray"><b>TIME - TABLE</b></th>
+            </tr>
+    
+            <tr>
+                <th>SUBJECT & DAYS</th>
+                <th>MONDAY</th>
+                <th>TUESDAY</th> 
+                <th>WEDNESDAY</th>          
+                <th>THURSDAY</th>
+                <th>FRIDAY</th> 
+                <th>SATURDAY</th>  
+               
+            </tr>
+            <tr>
+                <td rowspan="2">SUBJECT NAME AND TEACHER's NAME</td>
+                <td>XYZ</td>
+                <td>XYZ</td>
+                <td>XYZ</td>
+                <td>XYZ</td>
+                <td>XYZ</td>
+                <td>XYZ</td>
+            </tr>
+            <tr>
+                <td>ABC</td>
+                <td>ABC</td>
+                <td>ABC</td>
+                <td>ABC</td>
+                <td>ABC</td>
+                <td>ABC</td>
+            </tr>
+            <tr>
+                <td rowspan="2">SUBJECT NAME AND TEACHER's NAME</td>
+                <td>XYZ</td>
+                <td>XYZ</td>
+                <td>XYZ</td>
+                <td>XYZ</td>
+                <td>XYZ</td>
+                <td>XYZ</td>
+            </tr>
+            <tr>
+                <td>ABC</td>
+                <td>ABC</td>
+                <td>ABC</td>
+                <td>ABC</td>
+                <td>ABC</td>
+                <td>ABC</td>
+                
+            </tr>
+            
+        </table>
+
+
+</body>
+</html>

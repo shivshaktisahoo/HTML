@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Canvas</title>
+   </head>
+<body>
+    <canvas style="border: thin solid rgb(104, 16, 16);" id="canvas1" width="450" height="500"></canvas>
+    <script>
+        var ct=document.getElementById("canvas1");
+        var r=ct.getContext("2d");
+        r.beginPath();
+        r.font="40px Verdana";
+        r.fillStyle="blue";
+        r.fillText("TEXT IN CANVAS",50,80);
+        r.strokeText("Stroke text in canvas", 18, 120);
+        r.beginPath();
+        r.fillStyle="yellow";
+        r.rect(90,160,250,250);
+        r.fillRect(90,160,250,250);
+        r.stroke();
+        r.font="20px Lucida";
+        r.fillStyle="blue";
+        r.fillText("TEXT IN CANVAS",130,280);
+    </script>
+</body>
+</html>

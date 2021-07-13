@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Canvas2</title>
+   </head>
+<body>
+    
+    <canvas style="border: thin solid rgb(104, 16, 16);" id="canvas1" width="700" height="500"></canvas><br><br>
+    
+    <script>
+        var ct=document.getElementById("canvas1");
+        var r=ct.getContext("2d");
+        var img = new Image();
+        img.src='images/car.jpg';
+        img.onload = function() //onload event is triggered
+        {
+            var r1=img.width/img.height; // ratio of image
+            var w1=ct.width;
+            var h1=w1/r1; // for image height
+            if (h1>ct.height) // if canvas height if less than image height
+            {
+                h1=ct.height;
+                w1=h1*r1; // to adjust width according to new image height
+
+            }
+            else if(h1<ct.height)
+            {
+                h1=ct.height;
+            }
+            if (w1<img.width) // if image width is double than screen width
+            {
+                img.width=w1;
+                w1=ct.width;
+
+            }
+            r.drawImage(img,0,0,w1,h1);
+        }
+    </script>
+</body>
+</html>

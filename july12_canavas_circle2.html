@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Circle</title>
+   </head>
+<body>
+    <canvas style="border: thin solid rgb(104, 16, 16);" id="canvas1" width="400" height="500"></canvas>
+    <script>
+        var ct=document.getElementById("canvas1");
+        var r=ct.getContext("2d");
+        
+        r.beginPath();
+        r.arc(120,110,100,50,Math.PI*2,true); // arc(x,y,radius,startangle, endangle, anticlockwise)
+        r.stroke();
+        // to create an inner circle
+        r.beginPath();
+        r.arc(95,100,15,20,Math.PI*2,true); //left side circle 
+        r.stroke();
+        r.beginPath();
+        r.arc(140,100,15,20,Math.PI*2,true);  //right side circle 
+        r.stroke();
+    </script>
+</body>
+</html>

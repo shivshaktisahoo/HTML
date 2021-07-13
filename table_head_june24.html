@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table head & foot</title>
+    <style>
+          thead {
+            background-color: yellow;
+        }
+        tbody {
+            background-color: lightgreen;
+        }
+        tfoot {
+            background-color: coral;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table border="2" bordercolor="darkgray" bgcolor="lightgray" cellpadding="8" cellspacing="5" width="500" height="200">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>State</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Puja</td>
+                <td>30</td>
+                <td>Nagpur</td>
+                <td>Maharastra</td>
+            </tr>
+            <tr>
+                <td>Ravi</td>
+                <td>28</td>
+                <td>Rourkela</td>
+                <td>Odisha</td>
+            </tr>
+            <tr>
+                <td>Dipesh</td>
+                <td>30</td>
+                <td>kolkata</td>
+                <td>West bengal</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total no. of passengers</td>
+                <td>3</td>
+            </tr>
+        </tfoot>
+</table>
+</body>
+</html>

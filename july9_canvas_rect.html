@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Rect</title>
+   </head>
+<body>
+    <canvas style="border: thin solid rgb(104, 16, 16);" id="canvas1" width="400" height="500"></canvas>
+    <script>
+        var ct=document.getElementById("canvas1");
+        var r=ct.getContext("2d");
+        // r .fillRect(50,50,200,200);
+        // r.strokeRect(50,50,150,150);
+
+        // to create a rectangle with no fill
+        r.beginPath();
+        r.lineWidth="4"
+        r.strokeStyle="Tomato";
+        r .rect(20,20,200,200);
+        r.stroke();
+        // to create a fill rectangle inside
+        r.fillStyle="lightblue";
+        r .fillRect(30,30,100,100);
+        // to create a no fill rectangle inside
+        r.beginPath();
+        r.strokeStyle="green";
+        r .rect(120,120,90,90);
+        r.fillStyle="lightgreen";
+        r .fillRect(120,120,90,90);
+        r.stroke();
+    </script>
+</body>
+</html>
